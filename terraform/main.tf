@@ -34,7 +34,7 @@ resource "azuread_application" "main" {
 }
 
 resource "azuread_application_password" "main" {
-  application_id = "${azuread_application.main.id}"
+  application_object_id = "${azuread_application.main.id}"
   value          = "${random_uuid.client_secret.result}"
   end_date       = "2020-01-01T01:02:03Z"
 }
