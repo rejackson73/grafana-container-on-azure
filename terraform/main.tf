@@ -27,7 +27,7 @@ resource "random_string" "grafana_password" {
 }
 
 resource "azuread_application" "main" {
-  name            = "Grafana"
+  name            = "rjGrafana"
   homepage        = "https://${local.app_service_name}.azurewebsites.net"
   identifier_uris = ["https://Grafana"]
   reply_urls      = ["https://${local.app_service_name}.azurewebsites.net/login/generic_oauth"]
