@@ -1,5 +1,5 @@
 variable "app_name" {
-  default = "grafana"
+  default = "rjgrafana"
 }
 
 variable "location" {
